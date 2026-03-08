@@ -6,7 +6,21 @@ A Proof of Concept built at the **OpenClaw Global Unhackathon São Paulo**.
 
 ## Overview
 
-AURIA is an AI-powered voice assistant that enables accessible communication through multiple channels. It integrates messaging platforms with voice synthesis to provide natural conversational experiences.
+**Smart protection for the ones you love.**
+
+AURIA is a voice-activated AI security system designed to protect women, the elderly, and children. It enables discreet emergency alerts through Telegram, using AI to interpret voice messages and automatically trigger phone calls to trusted contacts.
+
+### The Problem
+
+Victims of violence often cannot call for help through conventional means in the moment of danger. Traditional safety apps require pressing panic buttons or downloading dedicated apps, which may not be accessible in critical situations.
+
+### The Solution
+
+AURIA provides a discreet, voice-activated digital guardian that:
+- **Voice Activation**: Just speak - no buttons to press
+- **No Extra App**: Uses Telegram (already installed on most phones)
+- **Humanized Call**: Realistic AI voice via ElevenLabs
+- **Instant Response**: From voice to rescue in seconds
 
 ## Architecture
 
@@ -113,6 +127,33 @@ ELEVENLABS_VOICE_ID=your_preferred_voice_id
 - **Elderly Care**: Simple voice interface for non-technical users
 - **Customer Service**: Automated voice responses via messaging triggers
 - **Emergency Notifications**: Voice alerts triggered by chat commands
+
+## Demo & Context
+
+### Pitch Deck
+Full presentation explaining the problem, solution, and vision.
+
+![Pitch Deck](Auria_-_Pitch_Deck.pdf)
+
+### Telegram Audio Processing
+User sends an audio message to the OpenClaw bot. The AI transcribes the audio using Whisper, interprets the intent, and triggers the N8N workflow to initiate an emergency call.
+
+![Telegram Audio](Telegram%20audio.jpg)
+
+### N8N Workflow
+The workflow receives webhook calls from OpenClaw and makes HTTP requests to ElevenLabs API for voice generation.
+
+![N8N Workflow](N8N_Workflow.jpeg)
+
+### N8N MCP Server Configuration
+MCP Access configuration showing the server URL and the "AI Tinkerers OpenClaw" workflow available for execution.
+
+![N8N MCP Server](N8N_MCP_Server.jpeg)
+
+### AURIA Calling Demo
+Video demonstration of AURIA making an automated emergency call with AI-generated voice.
+
+![AURIA Calling](Auria_calling.mp4)
 
 ## Contributing
 
