@@ -115,4 +115,10 @@ MIT License
 
 ## Team
 
-Built with passion at **OpenClaw Global Unhackathon São Paulo** 2025
+Built with passion at **OpenClaw Global Unhackathon São Paulo** 2026
+
+- [Ricardo Kerr](https://www.linkedin.com/in/ricardo-kerr-oficial/)
+- [Renato Rodrigues](https://www.linkedin.com/in/renatorodriguess/)
+- [Thiago Medeiro](https://www.linkedin.com/in/tfmedeiro/)
+- [Rodrigo Silvacio](https://www.linkedin.com/in/rodrigosilvacio/)
+- [William Antero](https://www.linkedin.com/in/wantero/)
