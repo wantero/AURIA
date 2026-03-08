@@ -23,12 +23,12 @@ AURIA is an AI-powered voice assistant that enables accessible communication thr
 - **Purpose**: User interface for receiving messages
 - **Role**: Entry point for user interactions
 - **Input Types**: Text messages or audio messages
-- **Audio Processing**: Whisper + ffmpeg for speech-to-text transcription
 - **Integration**: Bot API for message handling
 
 ### 2. OpenClaw (Router Layer)
 - **Purpose**: AI routing and orchestration
 - **Role**: Processes incoming messages and routes to appropriate workflows
+- **Audio Processing**: Whisper + ffmpeg for speech-to-text transcription
 - **LLM**: Uses OpenAI API as the language model backend
 - **MCP Integration**: Uses the `mcporter` skill for MCP server calls
 - **Features**:
