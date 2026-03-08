@@ -22,11 +22,15 @@ AURIA is an AI-powered voice assistant that enables accessible communication thr
 ### 1. Telegram (Input Layer)
 - **Purpose**: User interface for receiving messages
 - **Role**: Entry point for user interactions
+- **Input Types**: Text messages or audio messages
+- **Audio Processing**: Whisper + ffmpeg for speech-to-text transcription
 - **Integration**: Bot API for message handling
 
 ### 2. OpenClaw (Router Layer)
 - **Purpose**: AI routing and orchestration
 - **Role**: Processes incoming messages and routes to appropriate workflows
+- **LLM**: Uses OpenAI API as the language model backend
+- **MCP Integration**: Uses the `mcporter` skill for MCP server calls
 - **Features**:
   - Natural language understanding
   - Intent classification
@@ -69,7 +73,9 @@ AURIA is an AI-powered voice assistant that enables accessible communication thr
 
 ### Prerequisites
 - Telegram Bot Token
+- Whisper + ffmpeg (for audio transcription)
 - OpenClaw API access
+- OpenAI API key (LLM backend for OpenClaw)
 - N8N instance with MCP support
 - Twilio account (Account SID + Auth Token)
 - ElevenLabs API key
@@ -83,6 +89,9 @@ TELEGRAM_BOT_TOKEN=your_telegram_bot_token
 # OpenClaw
 OPENCLAW_API_KEY=your_openclaw_api_key
 OPENCLAW_ENDPOINT=https://api.openclaw.com
+
+# OpenAI (LLM for OpenClaw)
+OPENAI_API_KEY=your_openai_api_key
 
 # N8N
 N8N_WEBHOOK_URL=your_n8n_webhook_url
